@@ -1,5 +1,5 @@
 * {
-    background-color: hsl(202, 100%, 89%);
+    background-color: #F3E9F9;
 }
 
 header {
@@ -10,7 +10,7 @@ header {
 }
 
 a {
-    color: hsl(183, 100%, 30%); 
+    color: #281151; 
 }
 
 a:hover {

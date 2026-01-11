@@ -46,3 +46,32 @@ const projectNonEvents = () => {
 projectEvents();
 projectNonEvents();
 buttonEvents(button1);
+
+// Force download for resume link by fetching as blob
+const resumeLink = document.getElementById('resumeLink');
+if (resumeLink) {
+  resumeLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    const url = resumeLink.href;
+    fetch(url)
+      .then(resp => {
+        if (!resp.ok) throw new Error('Network response was not ok');
+        return resp.blob();
+      })
+      .then(blob => {
+        const blobUrl = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = blobUrl;
+        a.download = resumeLink.getAttribute('download') || 'resume.pdf';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(blobUrl);
+      })
+      .catch(err => {
+        console.error('Download failed:', err);
+        // fallback: navigate to the file (lets browser handle it)
+        window.location.href = url;
+      });
+  });
+}

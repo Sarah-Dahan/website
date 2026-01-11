@@ -1,7 +1,7 @@
 * {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
-    color: hsl(183, 100%, 20%);
+    color: #281151;
     text-align: center;
     box-sizing: border-box;
     line-height: 25px;
@@ -11,7 +11,7 @@
 
 header {
     position: fixed;
-    background-color: hsl(183, 100%, 30%);
+    background-color: #9A75AA;
     color: white;
     width: 100%;
     top: 0;
@@ -21,27 +21,27 @@ header {
 header h2 {
     display: inline;
     float: left;
-    background-color: hsl(183, 100%, 30%);
+    background-color: #9A75AA;
     color: white;
 }
 header li {
     display: inline;
     float: right;
     text-decoration: underline;
-    background-color: hsl(183, 100%, 30%);
+    background-color: #9A75AA;
     color: white;
     margin: 8px;
     font-weight: bold;
 }
 
 header a {
-    background-color: hsl(183, 100%, 30%);
+    background-color: #9A75AA;
     color: white;
 }
 
 header a:hover {
-    text-decoration: underline hsl(183, 100%, 30%);
-    transition: text-decoration 300ms ease-in;
+    text-decoration: underline #9A75AA;
+    transition: text-decoration 200ms ease-in;
 }
 
 /* BODY DIMENSIONS */
@@ -51,7 +51,7 @@ body {
     top: 75px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 600px auto auto 340px 217px;
+    grid-template-rows: 400px auto auto auto auto;
     grid-row-gap: 40px;
 }
 
@@ -62,48 +62,51 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: hsl(202, 100%, 89%);
+    background-color: #F3E9F9;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     
 }
+#nameAndTitle {
+    font-size: 30px;
+}
 .homesection i {
     margin: 30px;
     display: block;
-    background-color: hsl(202, 100%, 89%);
-    color: hsl(183, 100%, 20%);
+    background-color: #F3E9F9;
+    color: #281151;
 }
 .homesection h1 {
     display: block;
-    background-color: hsl(202, 100%, 89%);
+    background-color: #F3E9F9;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
-    color: hsl(183, 100%, 20%);
-    line-height: 60px;
+    font-size: 55px;
+    color: #281151;
+    /*line-height: 40px;*/
 }
 
 /* ABOUT ME SECTION */
 
 .aboutmesection {
     grid-area: 2 /2 / 3 / 6;
-    background-color: hsl(143, 45%, 89%);
+    background-color: #E1C6EF;
     border-radius: 15px;
 }
 
 .aboutmesection h2 {
-    background-color: hsl(143, 45%, 89%);
+    background-color: #E1C6EF;
     padding-top: 40px;
-    color: hsl(183, 100%, 20%);
+    color: #281151;
 }
 .aboutmecontent {
     display: flex;
-    background-color: hsl(143, 45%, 89%);
+    background-color: #E1C6EF;
     padding-left: 40px;
     padding-right: 40px;
     
 }
 .aboutmesection p {
-    background-color: hsl(143, 45%, 89%);
+    background-color: #E1C6EF;
     
 }
 .aboutmesection img {
@@ -115,7 +118,7 @@ body {
 }
 
 .aboutmesection a {
-    background-color: hsl(143, 45%, 89%);
+    background-color: #E1C6EF;
     font-weight: bold;
 }
 .aboutmesection a:hover {
@@ -125,14 +128,14 @@ body {
 /* PROJECTS SECTION */
 .projectssection {
     grid-area: 3 /1 / 4 / 7;
-    background-color: hsl(143, 45%, 89%);
+    background-color: #F3E9F9;
     border-radius: 15px;
     margin-left: 40px;
     margin-right: 40px;
 }
 
 .projectssection h2 {
-    background-color: hsl(143, 45%, 89%);
+    background-color: #F3E9F9;
     padding: 30px;
 }
 
@@ -148,7 +151,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: hsl(143, 45%, 89%);
+    background-color: #F3E9F9;
     row-gap: 30px;
 }
 
@@ -173,7 +176,7 @@ div {
     width: 84%;
     height: 98.5%;
     border-radius: 2%;
-    background-color: hsla(183, 100%, 30%, 0.9);
+    background-color: #9A75AAE6;
     letter-spacing: 0.7px;
     text-align: center;
     flex-direction: column;
@@ -184,7 +187,7 @@ div {
 }
 
 .info h3, .info p {
-    background-color: hsla(183, 100%, 30%, 0.65);
+    background-color: #9A75AAA6;
     width: fit-content;
     color: white;
     font-weight: bolder;
@@ -201,7 +204,7 @@ div {
 
 .projectButton {
     background-color: white;
-    color: hsl(183, 100%, 30%);
+    color: #281151;
     border: 0;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -237,7 +240,7 @@ div {
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
-    background-color: hsl(183, 100%, 35%);
+    background-color: #9A75AA;
     background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
     box-shadow:
       inset 2px 2px 3px rgba(255, 255, 255, 0.6),
@@ -248,7 +251,7 @@ div {
   }
   
   .styled:hover {
-    background-color: hsl(183, 100%, 30%);
+    background-color: #9A75AAD1;
   }
   
   .styled:active {
@@ -264,14 +267,14 @@ div {
     grid-area: 4 /1 / 5 / 7;
     justify-items: center;
     align-items: center;
-    background-color: hsl(143, 45%, 89%);
+    background-color: #E1C6EF;
     border-radius: 15px;
     margin-left: 40px;
     margin-right: 40px;
 }
 
 .skillssection h2, .skillssection p, .skillssection i {
-    background-color: hsl(143, 45%, 89%);
+    background-color: #E1C6EF;
 }
 
 .skillssection i {
@@ -283,25 +286,28 @@ div {
 .skillimage {
     display: flex;
     justify-content: space-around;
-    background-color: hsl(143, 45%, 89%);
+    background-color: #E1C6EF;
     flex-wrap: wrap;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* CONTACT SECTION */
 
 .contactsection {
     grid-area: 5 /2 / 6 / 6;
-    background-color: hsl(202, 100%, 89%);
+    background-color: #F3E9F9;
     border-radius: 15px;
     position: relative;
     margin-bottom: 30px;
 }
 
-.contactsection h2, .contactsection p {
-    background-color: hsl(202, 100%, 89%);
+.contactsection h2{
+    background-color: #F3E9F9;
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
 
 .contactsection p {
@@ -310,6 +316,24 @@ div {
 }
 .contactsection h2 {
     padding-top: 30px;
+}
+
+#contactList {
+    margin-bottom: 20px;
+}
+
+.contactsection i, .contactsection a {
+    background-color: #F3E9F9;
+    text-decoration: none;
+}
+.isALink {
+  color: inherit;
+  transition: color 250ms ease, filter 250ms ease;
+}
+.isALink:hover,
+.isALink:focus-within {
+  color: #281151;   /* lighter text color */
+  
 }
 
 /* RESPONSIVENESS */
