@@ -1,5 +1,5 @@
 
-let image1 = document.getElementById('gitbash');
+/*let image1 = document.getElementById('gitbash');
 let image2 = document.getElementById('portfolio');
 let image3 = document.getElementById('form-a-story');
 let image4 = document.getElementById('web-design');
@@ -45,7 +45,7 @@ const projectNonEvents = () => {
 
 projectEvents();
 projectNonEvents();
-buttonEvents(button1);
+buttonEvents(button1);*/
 
 // Force download for resume link by fetching as blob
 const resumeLink = document.getElementById('resumeLink');

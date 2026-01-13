@@ -43,6 +43,10 @@ header a:hover {
     text-decoration: underline #9A75AA;
     transition: text-decoration 200ms ease-in;
 }
+.homeIcon i, .homeIcon a {
+    background-color: #9A75AA;
+}
+
 
 /* BODY DIMENSIONS */
 
@@ -140,11 +144,12 @@ body {
 }
 
 .projectssection img{
-    width: 300px;
-    height: 400px;
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 225px;
+    height: 300px;
+    margin: 50px;
+    margin: 40px 40px 0px 40px;
     border-radius: 2%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 .projectimage {
     display: flex;
@@ -164,102 +169,43 @@ div {
 }
 
 .project-div {
-    position: relative; 
+    width: auto;
+    height: auto;
+    margin: 4%;
+    background-color: white;
+    border-top:#9A75AA 4px solid;
+    border-bottom: #9A75AA 4px solid;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 
-}
-
-.info {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 8%;
-    width: 84%;
-    height: 98.5%;
-    border-radius: 2%;
-    background-color: #9A75AAE6;
-    letter-spacing: 0.7px;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    z-index: 1;
-    margin-bottom: 18px;
-    transition: all 2s ease-in-out;
-}
-
-.info h3, .info p {
-    background-color: #9A75AAA6;
-    width: fit-content;
-    color: white;
-    font-weight: bolder;
-    font-size: 1rem;
-    border-radius: 10%;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .info h3 {
-    font-size: 28px;
-    line-height: 30px;
+    background-color: none;
+}
+
+.info {
+    margin-bottom: 20px;
 }
 
 .projectButton {
     background-color: white;
-    color: #281151;
-    border: 0;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    
-    bottom: 0px;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: .80rem;
-    text-align: center;
-    text-shadow: .5px .5px .5px #000;
+    color: #9A75AA;
+    border: 1px solid #9A75AA;
     border-radius: 10px;
-    box-shadow: 
-        inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-        inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .projectButton:hover {
-    background-color: rgb(220, 220, 220);
+    color: #ffffff;
+    border: 1px solid #9A75AA;
+    background-color: #9A75AA;
 }
 
 .projectButton:active {
-    box-shadow: 
-        inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-        inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    border: 1px solid #281151;
+    background-color: #281151;
 }
-
-.styled {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: #9A75AA;
-    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
-    box-shadow:
-      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-    
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  
-  .styled:hover {
-    background-color: #9A75AAD1;
-  }
-  
-  .styled:active {
-    box-shadow:
-      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-  }
-  
 
 /* SKILLS SECTION */
 
